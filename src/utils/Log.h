@@ -32,18 +32,18 @@ public:
      * Logging information
      * @param message message for console
      */
-    static void info(std::string message);
+    static void info(const std::string& message);
 
     /**
      * Logging warning
      * @param message message for console
      */
-    static void warn(std::string message);
+    static void warn(const std::string& message);
 
     /**
      * Logging error
      * @param message message for console
      */
-    static void error(std::string message);
+    static void error(const std::string& message);
 };
 #endif // LOG_H

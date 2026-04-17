@@ -25,17 +25,17 @@ std::string Log::GetTimeStamp()
     return oss.str();
 }
 
-void Log::info(std::string message)
+void Log::info(const std::string& message)
 {
     std::cout << "[" << GetTimeStamp() << "] " << "[INFO]" << message << std::endl;
 }
 
-void Log::warn(std::string message)
+void Log::warn(const std::string& message)
 {
     std::cout << "[" << GetTimeStamp() << "] " << "[WARN]" << message << std::endl;
 }
 
-void Log::error(std::string message)
+void Log::error(const std::string& message)
 {
     std::cout << "[" << GetTimeStamp() << "] " << "[ERROR]" << message << std::endl;
 }
