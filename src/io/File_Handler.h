@@ -7,15 +7,24 @@
 #ifndef FILE_HANDLER_H
 #define FILE_HANDLER_H
 
+#include
 
 /**
  * A system to handle different file types and manage the layers between the IO
  * for application to handle save and writes
  */
-class File_Handler {
+class File_Handler
+{
+private:
 
+
+public:
+    File_Handler();
+    ~File_Handler() = default;
+
+    int write();
+    int read();
 };
-
 
 
 #endif // FILE_HANDLER_H

@@ -5,7 +5,6 @@
  */
 
 #include "Text_Document.h"
-
 #include <utility>
 
 
@@ -19,27 +18,26 @@ void Text_Document::set_filename(std::string filename)
     filename = std::move(filename);
 }
 
-void Text_Document::add_line(std::string line)
+void Text_Document::add_line(line data)
 {
-    lines.push_back(std::move(line));
+    lines.push_back(std::move(data));
 }
 
 std::string Text_Document::edit_line(const int index, std::string line)
 {
+    // TODO Fix method for edit line.
     lines.at(index) = std::move(line);
     return get_line(index);
 }
 
-std::vector<std::string> Text_Document::get_all_lines()
+std::vector<line> Text_Document::get_all_lines()
 {
     return lines;
 }
 
 std::string Text_Document::get_line(const int index)
 {
-    if (index < lines.size())
-        return lines.at(index);
-    return "";
+    // TODO create method to access lines
 }
 
 std::string Text_Document::get_filename()
