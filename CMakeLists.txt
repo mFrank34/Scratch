@@ -66,10 +66,6 @@ qt_add_executable(${PROJECT_NAME}
         WIN32 MACOSX_BUNDLE
         src/main.cpp
         ${SOURCES}
-        src/io/File_Handler.cpp
-        src/io/File_Handler.h
-        src/io/format/Text_Document.cpp
-        src/io/format/Text_Document.h
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
