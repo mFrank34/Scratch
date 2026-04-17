@@ -7,6 +7,8 @@
 #ifndef FILE_HANDLER_H
 #define FILE_HANDLER_H
 
+#include "format/Text_Document.h"
+
 
 /**
  * A system to handle different file types and manage the layers between the IO
@@ -15,14 +17,15 @@
 class File_Handler
 {
 private:
-
+    Text_Document current_document;
+    Text_Document cached_document;
 
 public:
     File_Handler();
     ~File_Handler() = default;
 
-    int write();
-    int read();
+    int write(std::string location);
+    int read(std::string location);
 };
 
 
