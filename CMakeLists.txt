@@ -69,7 +69,7 @@ qt_add_executable(${PROJECT_NAME}
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
-        ${CMAKE_SOURCE_DIR}/src/include
+        ${CMAKE_SOURCE_DIR}/src
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
@@ -117,7 +117,7 @@ if (BUILD_TESTS)
         )
 
         target_include_directories(${PROJECT_NAME}_tests PRIVATE
-                ${CMAKE_SOURCE_DIR}/src/include
+                ${CMAKE_SOURCE_DIR}/src
         )
 
         target_link_libraries(${PROJECT_NAME}_tests PRIVATE
