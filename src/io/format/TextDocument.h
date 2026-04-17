@@ -13,7 +13,7 @@
  * text document container for
  * storing information around .txt format
  */
-class Text_Document
+class TextDocument
 {
 private:
     std::vector<std::string> lines;
@@ -24,9 +24,9 @@ public:
      * set up a new file, with a name
      * @param filename location to file and name of it.
      */
-    Text_Document(std::string filename);
+    TextDocument(std::string filename);
 
-    ~Text_Document() = default;
+    ~TextDocument() = default;
 
     /**
      * allows for the changing of file name

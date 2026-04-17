@@ -4,4 +4,14 @@
  * Description: A system designed to handle different file within memory
  */
  
-#include "File_Handler.h"
+#include "IOHandler.h"
+
+bool IOHandler::write(TextDocument& data)
+{
+
+}
+
+TextDocument IOHandler::read(std::string path)
+{
+
+}
