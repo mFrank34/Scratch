@@ -52,7 +52,7 @@ public:
      * get all lines in current document
      * @return return all data stored in file
      */
-    std::vector<std::string> get_all_lines();
+    std::vector<std::string>& get_all_lines();
 
     /**
      * selector for lines within the document

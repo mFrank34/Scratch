@@ -21,7 +21,7 @@ public:
     /**
      * object recreation for io handler, for reading and writing to files
      */
-    IOHandler();
+    IOHandler() = delete;
     ~IOHandler() = default;
 
     /**
@@ -36,7 +36,7 @@ public:
      * @param path location to read from.
      * @return data that was locally stored on path.
      */
-    static TextDocument read(std::string path);
+    static TextDocument read(const std::string& path);
 };
 
 

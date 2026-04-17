@@ -30,7 +30,7 @@ std::string TextDocument::edit_line(const int index, std::string line)
     return get_line(index);
 }
 
-std::vector<std::string> TextDocument::get_all_lines()
+std::vector<std::string>& TextDocument::get_all_lines()
 {
     return lines;
 }
