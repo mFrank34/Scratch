@@ -9,20 +9,14 @@
 #include <string>
 #include <vector>
 
-struct line
-{
-    int index;
-    std::string data;
-};
-
 /**
  * text document container for
  * storing information around .txt format
  */
-class Text_Document
+class TextDocument
 {
 private:
-    std::vector<line> lines;
+    std::vector<std::string> lines;
     std::string filename;
 
 public:
@@ -30,9 +24,9 @@ public:
      * set up a new file, with a name
      * @param filename location to file and name of it.
      */
-    Text_Document(std::string filename);
+    TextDocument(std::string filename);
 
-    ~Text_Document() = default;
+    ~TextDocument() = default;
 
     /**
      * allows for the changing of file name
@@ -44,7 +38,7 @@ public:
      * adding lines to the doc type
      * @param data
      */
-    void add_line(line data);
+    void add_line(std::string data);
 
     /**
      * edit a line within the file
@@ -58,7 +52,7 @@ public:
      * get all lines in current document
      * @return return all data stored in file
      */
-    std::vector<line> get_all_lines();
+    std::vector<std::string>& get_all_lines();
 
     /**
      * selector for lines within the document
